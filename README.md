@@ -63,15 +63,19 @@ dockerfile
 ADD https://example.com/app.zip /downloads/
 This downloads the remote file and saves it in /downloads/.
 
-⚖️ Summary Table
-Feature	COPY	ADD
-Copy local files/folders	✅	✅
-Download from URL	❌	✅
-Automatically extract archives	❌	✅ (.tar, etc.)
-Behavior	Simple & explicit	Flexible but implicit
-✅ Best Practice
-Use COPY by default because it’s straightforward and does exactly what it says.
-Only use ADD when you need one of its extra features (extracting archives or downloading from URLs).
+## ⚖️ Summary Table
+
+| Feature                             | COPY             | ADD                             |
+|-------------------------------------|------------------|----------------------------------|
+| Copy local files/folders            | ✅               | ✅                               |
+| Download from URL                   | ❌               | ✅                               |
+| Automatically extract archives      | ❌               | ✅ (`.tar`, etc.)                |
+| Behavior                            | Simple & explicit| Flexible but implicit           |
+
+> ✅ **Best Practice:**
+>
+> Use `COPY` by default because it’s straightforward and does exactly what it says.  
+> Only use `ADD` when you need one of its extra features (like extracting archives or downloading from URLs).
 
 
 
