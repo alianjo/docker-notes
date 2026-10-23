@@ -1,0 +1,11 @@
+name: Documentation checks
+
+on:
+  workflow_dispatch:
+
+jobs:
+  placeholder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Placeholder
+        run: echo "Documentation checks will be added next."
